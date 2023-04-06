@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>JS | Odev 1</title>
+
+</head>
+<body>
+    <div class="containerOne" style="display: block;">
+        <!-- Input Container -->
+        <div class="subContainerOne">
+            <div class="kodluyoruzTitle">
+                <a href="https://kodluyoruz.org" target="_blank">
+                    <h1>kodluyoruz.org</h1>
+                </a>
+            </div>
+            <div class="userInputMenu">
+                <Label>
+                    <h2>First Name</h2>
+                </Label>
+                <input type="text" id="fname" name="fname" value="">
+                <Label>
+                    <h2>Last Name</h2>
+                </Label>
+                <input type="text" name="lname" id="lname" value="">
+                <button id="userInputBtn" type="button" onclick="inputCheck();">Save</button>
+            </div>
+            <div class="kodluyoruzLogo">
+                <img src="img/kodluyoruz-log.png" alt="">
+            </div>
+        </div>
+    </div>
+        <!-- Content Container Start-->
+    <div class="containerTwo" style="display: none;">
+        <div class="subcontainerTwo">
+            
+                <div class="title"><strong>KODLUYORUZ</strong> 
+                </div>
+                <hr>
+                <div class="mainContent">
+
+                    <p>Merhaba, 
+                        <!-- Firstname & Lastname area-->
+                        <strong></strong>! <br>&nbsp;&nbsp;&nbsp;
+                        <!-- Date area -->                 
+                        <span id="date"></span> tarihinde 
+                        <!-- Day area -->
+                        <span id="day"></span>
+                        günü saat 
+                        <!-- Clock area -->
+                        <span id="time"></span> itibariyle <span> Kodluyoruz Frontend Web Devolopment
+                            Patikası</span>`nın Javascript bölümü 1. Ödevindesiniz. </p>
+                </div>
+            
+        </div>
+    </div><!-- Content Container Start-->
+    <script src="main.js"></script>
+</body>
+
+</html>
